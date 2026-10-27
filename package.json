@@ -1,0 +1,20 @@
+{
+  "name": "pg-migrate",
+  "version": "0.2.0",
+  "description": "Interactive Postgres to Postgres data migration with pre-flight checks and verification",
+  "type": "module",
+  "bin": { "pg-migrate": "pg-migrate.mjs" },
+  "files": ["pg-migrate.mjs"],
+  "scripts": {
+    "start": "node pg-migrate.mjs",
+    "lint": "node --check pg-migrate.mjs",
+    "test": "bash test/e2e.sh"
+  },
+  "engines": { "node": ">=18.15" },
+  "keywords": ["postgres", "postgresql", "migration", "pg_dump", "pg_restore", "neon", "aiven", "cli"],
+  "repository": { "type": "git", "url": "git+https://github.com/ym-scripts/pg-migrate.git" },
+  "homepage": "https://github.com/ym-scripts/pg-migrate#readme",
+  "bugs": "https://github.com/ym-scripts/pg-migrate/issues",
+  "author": "Aghogho Meyoron <youngmayor.dev@gmail.com> (https://mayrcodes.com.ng)",
+  "license": "MIT"
+}
